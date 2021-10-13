@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import {FontLoader} from 'three/examples/jsm/loaders/FontLoader';
 import {TextGeometry} from 'three/examples/jsm/geometries/TextGeometry';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 //AMBIENT SETUP
 const scene = new THREE.Scene();
@@ -112,7 +112,7 @@ Array(200).fill().forEach(addStar)
 const GLTFloader = new GLTFLoader();
 
 
-GLTFloader.load( './assets/3d/scene.gltf',function (gltf) {
+GLTFloader.load( './files/3d/scene.gltf',function (gltf) {
   const face = gltf.scene;
   material = new THREE.MeshNormalMaterial({
     flatShading: true,
@@ -137,11 +137,11 @@ function setMaterialsOnGLTF(object3D) {
 }
 
 //BACKGROUND
-const spaceTexture = new THREE.TextureLoader().load('./assets/space.jpg')
+const spaceTexture = new THREE.TextureLoader().load('./files/space.jpg')
 //scene.background = spaceTexture
 
 //AVATAR
-const avatarTexture = new THREE.TextureLoader().load('./assets/avatar2.png')
+const avatarTexture = new THREE.TextureLoader().load('./files/avatar2.png')
 const avatar = new THREE.Mesh(
   new THREE.BoxGeometry(2,2,2),
   new THREE.MeshBasicMaterial({map:avatarTexture})
@@ -151,8 +151,8 @@ avatar.position.setZ(10)
 scene.add(avatar)
 
 //EARTH
-const earthTexture = new THREE.TextureLoader().load('./assets/earth.jpg')
-const earthNormal = new THREE.TextureLoader().load('./assets/earth.tif')
+const earthTexture = new THREE.TextureLoader().load('./files/earth.jpg')
+const earthNormal = new THREE.TextureLoader().load('./files/earth.tif')
 const earth = new THREE.Mesh(
   new THREE.OctahedronGeometry(1.2, 10),
   new THREE.MeshStandardMaterial({map:earthTexture, normalMap:earthNormal})
@@ -162,7 +162,7 @@ earth.position.setZ(56)
 scene.add(earth)
 
 //KAABA
-const kaabaTexture = new THREE.TextureLoader().load('./assets/kaaba.jpg')
+const kaabaTexture = new THREE.TextureLoader().load('./files/kaaba.jpg')
 const kaaba = new THREE.Mesh(
   new THREE.BoxGeometry(1,1,1),
   new THREE.MeshBasicMaterial({map:kaabaTexture})
