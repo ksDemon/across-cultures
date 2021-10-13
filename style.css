@@ -1,6 +1,9 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 
-@import url("//db.onlinewebfonts.com/c/ed12d14803173bd1eacc90d52b17bafe?family=Adelle+Sans");
+@font-face {
+  font-family: Adelle Sans;
+  src: url('adelle.otf');
+}
 
 @font-face {
   font-family: foundry;
