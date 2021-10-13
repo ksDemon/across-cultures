@@ -56,7 +56,7 @@ const controls  = new OrbitControls(camera, renderer.domElement);
 
 //ENGLISH TITLE
 const loader = new FontLoader();
-loader.load( 'foundry.json', function ( font ) {
+loader.load( '/files/foundry.json', function ( font ) {
 
 	const geometry = new TextGeometry( 'ENGLISH ACROSS', {
 		font: font,
