@@ -1,9 +1,9 @@
 import './style.css'
-import * as THREE from 'three';
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import {FontLoader} from 'three/examples/jsm/loaders/FontLoader';
-import {TextGeometry} from 'three/examples/jsm/geometries/TextGeometry';
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from './js/three/build/three.module';
+import {OrbitControls} from './js/three/examples/jsm/controls/OrbitControls';
+import {FontLoader} from './js/three/examples/jsm/loaders/FontLoader';
+import {TextGeometry} from './js/three/examples/jsm/geometries/TextGeometry';
+import {GLTFLoader} from './js/three/examples/jsm/loaders/GLTFLoader.js';
 
 //AMBIENT SETUP
 const scene = new THREE.Scene();
