@@ -7,3 +7,35 @@ window.onwheel = e => {
       myID.className = "show"
     }
   }
+
+// distort scroll
+const body = document.body,
+scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+height = scrollWrap.getBoundingClientRect().height - '100px',
+speed = 0.08;
+
+var offset = 0;
+
+body.style.height = Math.floor(height) + "px";
+
+// Distort
+const content = document.querySelectorAll("section");
+const blocks = document.querySelectorAll("blockquote")
+let currentPos = window.pageYOffset;
+
+const callDistort = function () {
+  const newPos = window.pageYOffset;
+  const diff = newPos - currentPos;
+  const speed = diff * 0.1;
+
+  content.forEach(element => {
+    element.style.transform = "skewY(" + speed + "deg)";
+  });
+  blocks.forEach(element => {
+    element.style.transform = "skewY(" + speed + "deg)";
+  });
+  currentPos = newPos;
+  requestAnimationFrame(callDistort);
+};
+
+callDistort();

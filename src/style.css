@@ -107,9 +107,10 @@ blockquote p {
   grid-column: 6 / 12;
 }
 #navigation{
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
   grid-column: 1 / 13;
   height: 5rem;
   display: flex;
@@ -119,6 +120,7 @@ blockquote p {
   border: white;
   border-width: 1px;
   border-style: none none solid none;
+  z-index: 100;
 }
 #navigation a{
   font-family: foundry;
