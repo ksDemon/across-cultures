@@ -1,0 +1,211 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+@import url("//db.onlinewebfonts.com/c/ed12d14803173bd1eacc90d52b17bafe?family=Adelle+Sans");
+
+@font-face {
+  font-family: foundry;
+  src: url('foundry.otf');
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-bg);
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+  font-family: Adelle Sans;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  top: 0;
+  left: 0;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: foundry;
+  font-weight: 400;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  left: 0;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 5rem;
+  display: inline;
+  line-height: 1.1;
+}
+.left {
+  grid-column: 6 / 12;
+}
+#navigation{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  grid-column: 1 / 13;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: var(--dark-bg);
+  border: white;
+  border-width: 1px;
+  border-style: none none solid none;
+}
+#navigation a{
+  font-family: foundry;
+  font-weight: 700;
+  font-style: normal;
+  color:white;
+  width: auto;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  height: 5rem;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+#navigation a p{
+  margin-top: 1.8rem;
+  font-size: 1rem;
+}
+
+#navigation a:hover{
+  color: black;
+  background-color: white;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -12rem;
+  visibility: hidden;
+}
+
+.hide{
+  animation: hide .5s forwards 1;
+}
+
+@keyframes hide {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.show{
+  animation: show .5s forwards 1;
+}
+
+@keyframes show {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@media all and (max-width: 700px)
+{
+  .left {
+    grid-column: 2 / 12;
+  }
+  section {
+    grid-column: 2 / 12;
+    font-size: 1rem;
+  }
+  blockquote{
+    grid-column: 2 / 12;
+  }
+  blockquote p{
+    font-size: 3rem;
+  }
+  header{
+    grid-column: 2 / 12;
+  }
+  #navigation{
+    display: none;
+  }
+  header{
+    font-size: 1.25rem;
+  }
+}
+
+main{
+  display: a;
+}
+
+#opener{
+  margin-top: 100vh;
+}
