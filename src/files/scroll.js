@@ -12,7 +12,7 @@ window.onwheel = e => {
 const body = document.body,
 scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
 height = scrollWrap.getBoundingClientRect().height - '100px',
-speed = 0.08;
+speed = 0.04;
 
 var offset = 0;
 
