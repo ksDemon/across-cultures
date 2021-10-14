@@ -117,7 +117,7 @@ GLTFloader.load( './files/3d/scene.gltf',function (gltf) {
   material = new THREE.MeshNormalMaterial({
     flatShading: true,
   });
-  face.position.set(3,1,35)
+  face.position.set(3,1,40)
   face.rotateY(599*3.14/8)
   
   setMaterialsOnGLTF(face)
@@ -142,7 +142,7 @@ GLTFloader.load( './files/3d2/scene.gltf',function (gltf) {
   material = new THREE.MeshNormalMaterial({
     flatShading: true,
   });
-  object.position.set(-3,-1.5,61)
+  object.position.set(-3,-1.5,65)
   object.rotateZ(-3.14/8)
   object.scale.set = (0.2,0.2,0.2)
   
@@ -173,7 +173,7 @@ const earth = new THREE.Mesh(
   new THREE.MeshStandardMaterial({map:earthTexture, normalMap:earthNormal})
 )
 earth.position.setX(-2)
-earth.position.setZ(56)
+earth.position.setZ(60)
 scene.add(earth)
 
 //KAABA
@@ -183,7 +183,7 @@ const kaaba = new THREE.Mesh(
   new THREE.MeshBasicMaterial({map:kaabaTexture})
 )
 kaaba.position.setX(-2)
-kaaba.position.setZ(59.5)
+kaaba.position.setZ(63.5)
 scene.add(kaaba)
 
 //GAME LOOP
