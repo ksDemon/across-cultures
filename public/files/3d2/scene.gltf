@@ -1,0 +1,356 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3008,
+      "max": [
+        0.075180001556873322,
+        0.029090000316500664,
+        1.980970025062561
+      ],
+      "min": [
+        -0.075180001556873322,
+        -0.029090000316500664,
+        0.00013000000035390258
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 36096,
+      "componentType": 5126,
+      "count": 3008,
+      "max": [
+        0.9775809645652771,
+        0.99948084354400635,
+        0.99999964237213135
+      ],
+      "min": [
+        -0.9775809645652771,
+        -0.99948084354400635,
+        -0.99999690055847168
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 5376,
+      "max": [
+        3007
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 72192,
+      "componentType": 5126,
+      "count": 2226,
+      "max": [
+        0.99874001741409302,
+        0.056650001555681229,
+        1.9484699964523315
+      ],
+      "min": [
+        -0.99874001741409302,
+        -0.056650001555681229,
+        1.6572999954223633
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 98904,
+      "componentType": 5126,
+      "count": 2226,
+      "max": [
+        0.9921877384185791,
+        0.99719333648681641,
+        1
+      ],
+      "min": [
+        -0.9921877384185791,
+        -0.99719333648681641,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 21504,
+      "componentType": 5125,
+      "count": 3408,
+      "max": [
+        2225
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1,
+      "max": [
+        0.033330000936985016
+      ],
+      "min": [
+        0.033330000936985016
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1,
+      "max": [
+        0,
+        0,
+        -0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        -0,
+        1
+      ],
+      "type": "VEC4"
+    }
+  ],
+  "animations": [
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 8,
+            "path": "rotation"
+          }
+        }
+      ],
+      "name": "2Hand-Axe|Take 001|Layer0",
+      "samplers": [
+        {
+          "input": 6,
+          "interpolation": "LINEAR",
+          "output": 7
+        }
+      ]
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Deved-Games (https://sketchfab.com/Deved-Games)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/a883aae69c654ad68826f284edc99579",
+      "title": "Pickaxe"
+    },
+    "generator": "Sketchfab-3.18.7",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 35136,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 125616,
+      "byteOffset": 35136,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4,
+      "byteOffset": 160752,
+      "name": "floatBufferViews"
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16,
+      "byteOffset": 160756,
+      "byteStride": 16,
+      "name": "floatBufferViews"
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 160772,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Brown",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.13758341969999999,
+          0.031458307099999999,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Grey",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2330150604,
+          0.2330150604,
+          0.2330150604,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Stick_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Stick_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3,
+        5,
+        8
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        -0.29086000000000006,
+        0.95517000000000007,
+        -0.05519000000000001,
+        0,
+        -0.77110000000000001,
+        -0.19988000000000003,
+        0.60452000000000006,
+        0,
+        0.56639000000000006,
+        0.21839000000000003,
+        0.7946700000000001,
+        0,
+        4.0762500000000008,
+        1.00545,
+        5.9038600000000008,
+        1
+      ],
+      "name": "Lamp"
+    },
+    {
+      "name": "Lamp"
+    },
+    {
+      "children": [
+        6,
+        7
+      ],
+      "name": "Stick"
+    },
+    {
+      "mesh": 0,
+      "name": "Stick_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Stick_1"
+    },
+    {
+      "name": "2Hand-Axe",
+      "scale": [
+        0.0099999997764825821,
+        0.0099999997764825821,
+        0.0099999997764825821
+      ],
+      "translation": [
+        0.17059999704360962,
+        0,
+        -0.27880999445915222
+      ]
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+

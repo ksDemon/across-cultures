@@ -136,6 +136,21 @@ function setMaterialsOnGLTF(object3D) {
   }
 }
 
+//PICKAXE
+GLTFloader.load( './files/3d2/scene.gltf',function (gltf) {
+  const object = gltf.scene;
+  material = new THREE.MeshNormalMaterial({
+    flatShading: true,
+  });
+  object.position.set(-3,-1.5,61)
+  object.rotateZ(-3.14/8)
+  object.scale.set = (0.2,0.2,0.2)
+  
+  
+  setMaterialsOnGLTF(object)
+  scene.add(object);
+});
+
 //BACKGROUND
 const spaceTexture = new THREE.TextureLoader().load('./files/space.jpg')
 //scene.background = spaceTexture
@@ -168,7 +183,7 @@ const kaaba = new THREE.Mesh(
   new THREE.MeshBasicMaterial({map:kaabaTexture})
 )
 kaaba.position.setX(-2)
-kaaba.position.setZ(62)
+kaaba.position.setZ(59.5)
 scene.add(kaaba)
 
 //GAME LOOP
