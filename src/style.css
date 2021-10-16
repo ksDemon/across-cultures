@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Adelle Sans;
-  src: url('adelle.otf');
+  src: url('adelle.ttf');
 }
 
 @font-face {
@@ -45,7 +45,7 @@ canvas {
   --dark-bg: rgba(15, 15, 15, 0.95);
   --spacing: 350px;
   font-family: Adelle Sans;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -62,7 +62,7 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
-h1, h2, h3, blockquote {
+blockquote, h1, h2, h3 {
   font-family: foundry;
   font-weight: 400;
   font-style: normal;
@@ -210,6 +210,17 @@ a.anchor {
   header{
     font-size: 1.25rem;
   }
+  #canvas2{
+    grid-column: 2/12!important;
+    margin-bottom: var(--spacing)!important;
+    flex-direction: row!important;
+  }
+  .newSec{
+    margin-bottom: 1rem;
+  }
+  i{
+    margin-top: 2rem!important;
+  }
 }
 
 main{
@@ -220,16 +231,6 @@ main{
   margin-top: 100vh;
 }
 
-.big{
-  background-color: rgba(255, 255, 255, 0.9);
-  height: auto;
-  color: #1C1C1C;
-  padding: 0px;
-  grid-column: 1/13;
-  grid-template-columns: repeat(12,1fr);
-  display: grid;
-  overflow-x: hidden;
-}
 
 .big svg{
   align-items:center;
@@ -262,13 +263,52 @@ big:hover:after {
 }
 
 .newSec{
-  background-color: white; 
+  background-color: transparent;
+  border: 2px solid #1C1C1C; 
+  box-shadow: 10px 10px;
+}
+
+.newSec h2{
+  margin-bottom: 1rem;
+}
+
+hr{
+  border: 1px solid #1C1C1C;
 }
 
 /*
 * {
   outline: 2px solid red;
 }
+
 */
 
 html, body { max-width: 100%; overflow-x: hidden; }
+
+.big{
+  background-color: white;
+  height: auto;
+  color: #1C1C1C;
+  padding: 0px;
+  grid-column: 1/13;
+  grid-template-columns: repeat(12,1fr);
+  display: grid;
+  overflow-x: hidden;
+  grid-auto-rows: auto;
+  box-sizing: border-box;
+}
+
+#canvas2{
+  box-sizing: border-box;
+  grid-column: 8/12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - var(--spacing));
+}
+
+i{
+  font-size: 6.5em;
+  margin:auto;
+}
