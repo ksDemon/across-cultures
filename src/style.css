@@ -30,10 +30,6 @@
   background: var(--dark-bg);
 }
 
-html{
-  scroll-behavior:smooth
-}
-
 canvas {
   position: fixed;
   top: 0;
