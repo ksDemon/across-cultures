@@ -308,3 +308,209 @@ i{
   font-size: 6.5em;
   margin:auto;
 }
+
+/*GLITCH
+*/
+* {
+  box-sizing: border-box;
+  transition: color 0.25s ease;
+}
+:root {
+  --dark: #111;
+  --light: #fefefe;
+  --color: var(--dark);
+  --bg: var(--light);
+}
+
+.pglitch[data-scroll='in'] [data-char]:after {
+  animation-name: glitch-switch;
+}
+.reveal--0 [data-char]:after {
+  animation-iteration-count: calc(var(--char-index) * 0.55);
+}
+.reveal--1 [data-char]:after {
+  animation-iteration-count: 4;
+}
+.reveal--2 [data-char]:after {
+  animation-iteration-count: var(--count);
+}
+.pglitch:nth-of-type(1) {
+  position: absolute;
+  opacity: 0;
+}
+.word {
+  position: relative;
+  display: inline-block;
+}
+[data-char] {
+  color: transparent;
+  position: relative;
+}
+[data-char]:after {
+  --txt: attr(data-char);
+  animation-duration: 0.2s;
+  animation-delay: 0.5s;
+  animation-timing-function: steps(1);
+  animation-fill-mode: backwards;
+  content: var(--txt);
+  color: var(--color);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.page {
+  align-items: center;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: calc(var(--spacing)/2);
+  justify-content: center;
+  position: relative;
+  scroll-snap-align: center;
+  text-align: center;
+  grid-column: 1/13;
+  font-size: 3.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+@-moz-keyframes glitch-switch {
+  0% {
+    content: var(--char-0);
+  }
+  10% {
+    content: var(--char-1);
+  }
+  20% {
+    content: var(--char-2);
+  }
+  30% {
+    content: var(--char-3);
+  }
+  40% {
+    content: var(--char-4);
+  }
+  50% {
+    content: var(--char-5);
+  }
+  60% {
+    content: var(--char-6);
+  }
+  70% {
+    content: var(--char-7);
+  }
+  80% {
+    content: var(--char-8);
+  }
+  90% {
+    content: var(--char-9);
+  }
+  100% {
+    content: var(--char-0);
+  }
+}
+@-webkit-keyframes glitch-switch {
+  0% {
+    content: var(--char-0);
+  }
+  10% {
+    content: var(--char-1);
+  }
+  20% {
+    content: var(--char-2);
+  }
+  30% {
+    content: var(--char-3);
+  }
+  40% {
+    content: var(--char-4);
+  }
+  50% {
+    content: var(--char-5);
+  }
+  60% {
+    content: var(--char-6);
+  }
+  70% {
+    content: var(--char-7);
+  }
+  80% {
+    content: var(--char-8);
+  }
+  90% {
+    content: var(--char-9);
+  }
+  100% {
+    content: var(--char-0);
+  }
+}
+@-o-keyframes glitch-switch {
+  0% {
+    content: var(--char-0);
+  }
+  10% {
+    content: var(--char-1);
+  }
+  20% {
+    content: var(--char-2);
+  }
+  30% {
+    content: var(--char-3);
+  }
+  40% {
+    content: var(--char-4);
+  }
+  50% {
+    content: var(--char-5);
+  }
+  60% {
+    content: var(--char-6);
+  }
+  70% {
+    content: var(--char-7);
+  }
+  80% {
+    content: var(--char-8);
+  }
+  90% {
+    content: var(--char-9);
+  }
+  100% {
+    content: var(--char-0);
+  }
+}
+@keyframes glitch-switch {
+  0% {
+    content: var(--char-0);
+  }
+  10% {
+    content: var(--char-1);
+  }
+  20% {
+    content: var(--char-2);
+  }
+  30% {
+    content: var(--char-3);
+  }
+  40% {
+    content: var(--char-4);
+  }
+  50% {
+    content: var(--char-5);
+  }
+  60% {
+    content: var(--char-6);
+  }
+  70% {
+    content: var(--char-7);
+  }
+  80% {
+    content: var(--char-8);
+  }
+  90% {
+    content: var(--char-9);
+  }
+  100% {
+    content: var(--char-0);
+  }
+}
